@@ -139,7 +139,7 @@ module.exports = [
     total_price: 3000000,
     class_of_finishes: "High-end",
     feature1: "Imported American Fittings",
-    featur2: "Rooftop Terrace",
+    feature2: "Rooftop Terrace",
     feature3: "Home Theater",
     feature4: "Wine Cellar",
     feature5: "Outdoor Fireplace",
