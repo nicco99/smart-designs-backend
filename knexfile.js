@@ -14,4 +14,14 @@ module.exports = {
       directory: path.join(__dirname, "src", "db", "seeds"),
     },
   },
+  production: {
+    client: "postgresql",
+    connection: DATABASE_URL || "postgres://zwfftpfr:OG4JNkjl122KbhxzrJNOu7MfLztIQ7xm@mahmud.db.elephantsql.com/zwfftpfr",
+    migrations: {
+      directory: path.join(__dirname, "src", "db", "migrations"),
+    },
+    seeds: {
+      directory: path.join(__dirname, "src", "db", "seeds"),
+    },
+  }
 };
