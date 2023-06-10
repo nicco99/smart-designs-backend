@@ -1,5 +1,5 @@
 {
-  "name": "starter-node-express-postgresql",
+  "name": "house-designs-backend",
   "version": "1.0.0",
   "description": "Starter code for the Node.js, Express, and PostgreSQL module",
   "main": "src/app.js",

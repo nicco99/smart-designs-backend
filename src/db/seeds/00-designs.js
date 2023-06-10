@@ -2,11 +2,11 @@
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> } 
  */
-const products = require("../fixtures/products")
+const designs = require("../fixtures/designs")
 exports.seed = async function(knex) {
   // Deletes ALL existing entries
-   return knex.raw("TRUNCATE TABLE products RESTART IDENTITY CASCADE")
+   return knex.raw("TRUNCATE TABLE designs RESTART IDENTITY CASCADE")
    .then(function (){
-    return knex("products").insert(products)
+    return knex("designs").insert(designs)
    })
 };
