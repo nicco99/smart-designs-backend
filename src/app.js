@@ -2,10 +2,12 @@ const express = require("express");
 const app = express();
 const morgan = require("morgan");
 const designsRouter = require("./designs/designs.router");
+const contactsRouter = require("./contacts/contacts.router");
 
 app.use(express.json());
 app.use(morgan("dev"));
 app.use("/designs", designsRouter);
+app.use("/contact", contactsRouter);
 
 // Not found handler
 app.use((req, res, next) => {
