@@ -1,9 +1,10 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 const morgan = require("morgan");
 const designsRouter = require("./designs/designs.router");
 const contactsRouter = require("./contacts/contacts.router");
-
+app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
 app.use("/designs", designsRouter);
