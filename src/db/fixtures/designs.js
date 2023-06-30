@@ -24,6 +24,7 @@ module.exports = [
     feature4: "Enclosed one car parking",
     feature5: "imported American fittings",
     status: "completed",
+    plinth_area: 160,
   },
   //done1
 
@@ -54,6 +55,7 @@ module.exports = [
     feature4: "Water connection",
     feature5: "Open plan kitchen",
     status: "completed",
+    plinth_area: 180,
   },
   //done2
 
@@ -84,6 +86,7 @@ module.exports = [
     feature4: "Enclosed one car parking",
     feature5: "imported American fittings",
     status: "completed",
+    plinth_area: 150,
   },
   //done3
 
@@ -114,6 +117,7 @@ module.exports = [
     feature4: "Wine Cellar",
     feature5: "Outdoor Fireplace",
     status: "completed",
+    plinth_area: 180,
   },
   //done4
 
@@ -143,6 +147,8 @@ module.exports = [
     feature3: "Home Theater",
     feature4: "Wine Cellar",
     feature5: "Outdoor Fireplace",
+    status: "completed",
+    plinth_area: 180,
   },
   //done5
 
@@ -173,6 +179,7 @@ module.exports = [
     feature4: "Enclosed one car parking",
     feature5: "imported American fittings",
     status: "completed",
+    plinth_area: 150,
   },
   //done6
   {
@@ -202,6 +209,7 @@ module.exports = [
     feature4: "Enclosed one car parking",
     feature5: "imported American fittings",
     status: "completed",
+    plinth_area: 150,
   },
   // {
   //   no_of_bathrooms: 2,
