@@ -26,7 +26,7 @@ exports.up = function (knex) {
     table.string("feature4");
     table.string("feature5");
     table.string("status");
-    table.string("plinth_area");
+ 
     table.timestamps(true, true);
   });
 };
