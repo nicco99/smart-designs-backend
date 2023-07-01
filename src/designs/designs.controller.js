@@ -2,31 +2,8 @@ const designsService = require("./designs.service");
 const hasProperties = require("../errors/hasProperties");
 const hasRequiredProperties = hasProperties("image1", "image2");
 const asyncErrorBoundary = require("../errors/asyncErrorBoundary");
-const VALID_PROPERTIES = [
-  "product_sku",
-  "product_title",
-  "product_description",
-  "product_price",
-  "product_quantity_in_stock",
-  "product_weight_in_lbs",
-  "supplier_id",
-];
 
-function hasOnlyValidProperties(req, res, next) {
-  const { data = {} } = req.body;
 
-  const invalidFields = Object.keys(data).filter(
-    (field) => !VALID_PROPERTIES.includes(field)
-  );
-
-  if (invalidFields.length) {
-    return next({
-      status: 400,
-      message: `Invalid field(s): ${invalidFields.join(", ")}`,
-    });
-  }
-  next();
-}
 
 async function designExists(req, res, next) {
   const design = await designsService.read(req.params.designId);
